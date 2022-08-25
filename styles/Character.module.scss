@@ -1,0 +1,21 @@
+.Character {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: rgb(196, 198, 199);
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.CharacterInfo {
+  display: flex;
+  align-items: center;
+}
+
+.Character:nth-child(odd){
+  background: gainsboro;
+}
+
+.CharacterImage {
+  margin: 5px;
+}

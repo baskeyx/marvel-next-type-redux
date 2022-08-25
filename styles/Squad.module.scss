@@ -1,0 +1,45 @@
+.Squad {
+  position: fixed;
+  bottom: 60px;
+  display: flex;
+  background: #000000;
+  left: 0;
+  padding: 5px 5px 0;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  .SquadInfo {
+    display: flex;
+    width: 100%;
+    margin: 5px 0 2px 5px;
+    justify-content: space-between;
+    .SquadName {
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .SquadBar {
+      display: flex;
+      button {
+        margin: 3px;
+      }
+    }
+  }
+  .Squadmates {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .SquadmateImage {
+      max-width: calc(25% - 10px);
+      margin: 5px;
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+}

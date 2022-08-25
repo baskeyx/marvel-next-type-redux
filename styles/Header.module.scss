@@ -1,0 +1,26 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  z-index: 99;
+  .HeaderLogo {
+    width: 80px;
+    padding: 5px;
+  }
+  
+  .HeaderTitle {
+    color: #fff;
+    font-size: 13px;
+    width: 50px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 4px;
+  }
+}
