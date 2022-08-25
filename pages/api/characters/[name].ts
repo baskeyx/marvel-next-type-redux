@@ -27,9 +27,10 @@ export default async function handler(
   res: NextApiResponse<Data>
 ) {
   const timeStamp = Math.floor(Date.now() / 1000);
-  const { MARVELPRIVATEKEY, MARVELPUBLICKEY } = process.env;
-  const hash = md5(`${timeStamp}${MARVELPRIVATEKEY}${MARVELPUBLICKEY}`);
-  const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${req.query.name}&ts=${timeStamp}&apikey=${MARVELPUBLICKEY}&hash=${hash}`);
+  const { MARVELPRIVATEKEY } = process.env;
+  const publicKey = '5bcbb3547b9551e6c40081b37dc2f1df';
+  const hash = md5(`${timeStamp}${MARVELPRIVATEKEY}${publicKey}`);
+  const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${req.query.name}&ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`);
   const data = await response.json();
   const characters: Array<Character> = [];
   data.data.results.forEach((character: Character) => {

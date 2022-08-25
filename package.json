@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "amp": "amplify add api"
+    "amp": "amplify -v"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
