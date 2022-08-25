@@ -29,7 +29,7 @@ export default async function handler(
   const timeStamp = Math.floor(Date.now() / 1000);
   const { MARVELPRIVATEKEY } = process.env;
   const publicKey = '5bcbb3547b9551e6c40081b37dc2f1df';
-  const hash = md5(`${timeStamp}${MARVELPRIVATEKEY}${publicKey}`);
+  const hash = md5(`${timeStamp}45d3686ace8d4802ac6fc1608d170a0cfaf77d3c${publicKey}`);
   const response = await fetch(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${req.query.name}&ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`);
   const data = await response.json();
   const characters: Array<Character> = [];
