@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-marvelnexttyperedux-dev-125933-authRole",
+      "UnauthRoleArn": "arn:aws:iam::329120912931:role/amplify-marvelnexttyperedux-dev-125933-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::329120912931:role/amplify-marvelnexttyperedux-dev-125933-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-marvelnexttyperedux-dev-125933-deployment",
+      "UnauthRoleName": "amplify-marvelnexttyperedux-dev-125933-unauthRole",
+      "StackName": "amplify-marvelnexttyperedux-dev-125933",
+      "StackId": "arn:aws:cloudformation:eu-west-2:329120912931:stack/amplify-marvelnexttyperedux-dev-125933/62e4f240-246d-11ed-8cd6-06e957346298",
+      "AmplifyAppId": "diojbsboia0jy"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "diojbsboia0jy",
+          "type": "cicd"
+        }
+      }
+    }
+  }
+}
