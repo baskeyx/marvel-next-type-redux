@@ -2,13 +2,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  name: string;
 }
 
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const name = req.query.name;
-  res.status(200).json({ name });
+  const { name } = req.query;
+  res.status(200).json({ name: `${name}` });
 }
