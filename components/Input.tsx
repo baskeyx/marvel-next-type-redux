@@ -10,8 +10,8 @@ interface Props {
 
 const Input: React.FC<Props> = ({ label, ...props }) => (
   <div className={`${styles.InputWrapper} ${props.value ? styles.Text : null}`}>
-    <input className={styles.Input} {...props} />
-    <label className={styles.InputLabel} >{label}</label>
+    <input id={label} className={styles.Input} {...props} />
+    <label htmlFor={label} className={styles.InputLabel} >{label}</label>
   </div>
 );
 

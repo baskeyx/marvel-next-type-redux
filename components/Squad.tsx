@@ -28,12 +28,12 @@ const Squad: React.FC<Props> = ({ squadmates, teamName, store }) => {
         <h2 className={styles.SquadName}>{teamName}</h2>
         <div className={styles.SquadBar}>
           <Button onClick={() => store.dispatch(clearTeamMembers())}>
-            <Image src='/bin2.svg' alt='Reset' width={15} height={15} />
+            <img src='/bin2.svg' alt='Reset' width={17} height={17} />
           </Button>
           <Button onClick={() => setDisplay(!display)}>
             {display
-              ? <Image src='/arrow-down.svg' alt='Down' width={20} height={20} />
-              : <Image src='/arrow-up.svg' alt='Up' width={20} height={20} />
+              ? <img src='/arrow-down.svg' alt='Down' width={20} height={20} />
+              : <img src='/arrow-up.svg' alt='Up' width={20} height={20} />
             }
           </Button>
         </div>

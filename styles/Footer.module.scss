@@ -9,5 +9,9 @@
   align-items: center;
   position: fixed;
   font-family: 'Open Sans';
-  font-weight: 800;
+  font-weight: 300;
+  a {
+    font-weight: 800;
+    margin-left: 7px;
+  }
 }

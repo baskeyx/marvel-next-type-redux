@@ -7,7 +7,7 @@
 .InputLabel {
   position: absolute;
   pointer-events: none;
-  color: #86868b;
+  color: #717171;
   font-size: 14px;
   top: 19px;
   left: 15px;
@@ -29,12 +29,13 @@
   display: flex;
   font-size: 16px;
   -webkit-appearance: none;
+  background: #fff;
 }
 
-@media (max-device-width: 1112px) {
-  .Input[type="Search"] + .InputLabel,
-  .Text .InputLabel {
-    top: 5px;
-    font-size: 11px;
-  }
-}
+// @media (max-device-width: 1112px) {
+//   .Input[type="Search"] + .InputLabel,
+//   .Text .InputLabel {
+//     top: 5px;
+//     font-size: 11px;
+//   }
+// }

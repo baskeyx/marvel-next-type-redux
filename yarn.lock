@@ -53,7 +53,7 @@
 
 "@next/env@12.2.5":
   version "12.2.5"
-  resolved "https://registry.npmjs.org/@next/env/-/env-12.2.5.tgz"
+  resolved "https://registry.yarnpkg.com/@next/env/-/env-12.2.5.tgz#d908c57b35262b94db3e431e869b72ac3e1ad3e3"
   integrity sha512-vLPLV3cpPGjUPT3PjgRj7e3nio9t6USkuew3JE/jMeon/9Mvp1WyR18v3iwnCuX7eUAm1HmAbJHHLAbcu/EJcw==
 
 "@next/eslint-plugin-next@12.2.5":
@@ -80,7 +80,7 @@
 
 "@next/swc-darwin-x64@12.2.5":
   version "12.2.5"
-  resolved "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-12.2.5.tgz"
+  resolved "https://registry.yarnpkg.com/@next/swc-darwin-x64/-/swc-darwin-x64-12.2.5.tgz#2e44dd82b2b7fef88238d1bc4d3bead5884cedfd"
   integrity sha512-5o8bTCgAmtYOgauO/Xd27vW52G2/m3i5PX7MUYePquxXAnX73AAtqA3WgPXBRitEB60plSKZgOTkcpqrsh546A==
 
 "@next/swc-freebsd-x64@12.2.5":
@@ -170,6 +170,11 @@
   integrity sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==
   dependencies:
     tslib "^2.4.0"
+
+"@types/gtag.js@^0.0.10":
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/@types/gtag.js/-/gtag.js-0.0.10.tgz#ac90d9b79c00daac447725a4b78ec1c398796760"
+  integrity sha512-98Hy7woUb3jMAMXkZQwfIOYNyfxmI0+U4m0PpCGdnd/FHk0tDpQFCqgXdNkdEoXsKkcGya/2Gew1cAJjKJspVw==
 
 "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
@@ -1347,7 +1352,7 @@ natural-compare@^1.4.0:
 
 next@12.2.5:
   version "12.2.5"
-  resolved "https://registry.npmjs.org/next/-/next-12.2.5.tgz"
+  resolved "https://registry.yarnpkg.com/next/-/next-12.2.5.tgz#14fb5975e8841fad09553b8ef41fe1393602b717"
   integrity sha512-tBdjqX5XC/oFs/6gxrZhjmiq90YWizUYU6qOWAfat7zJwrwapJ+BYgX2PmiacunXMaRpeVT4vz5MSPSLgNkrpA==
   dependencies:
     "@next/env" "12.2.5"

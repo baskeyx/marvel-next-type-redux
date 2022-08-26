@@ -5,6 +5,10 @@ const nextConfig = {
   images: {
     domains: ['i.annihil.us'],
   },
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 }
 
 module.exports = nextConfig

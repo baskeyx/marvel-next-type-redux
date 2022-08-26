@@ -26,10 +26,10 @@ const Character: React.FC<Props> = ({ id, name, thumbnail, selected, store }) =>
     <div>
       { selected 
         ? <Button onClick={() => store.dispatch(removeTeamMember({id}))} >
-            <Image src='/cross.svg' alt='Remove' width={10} height={10} />
+            <img src='/cross.svg' alt='Remove' width={14} height={14} />
           </Button>
         : <Button onClick={() => store.dispatch(addTeamMember({id, name, thumbnail}))} >
-            <Image src='/plus.svg' alt='Add' width={10} height={10} />
+            <img src='/plus.svg' alt='Add' width={14} height={14} />
           </Button>
       }
     </div>

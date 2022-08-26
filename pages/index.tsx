@@ -8,6 +8,8 @@ import Character from '../components/Character'
 import Squad from '../components/Squad';
 import Input from '../components/Input';
 
+import { GA_TRACKING_ID } from "../utils/gtag";
+
 interface CharacterObject {
   id: number;
   name: string;
@@ -62,9 +64,27 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Marvel Ultimate Alliance</title>
-        <meta name="description" content="Build your own " />
+        <title>Marvel Squads - Build Your Ultimate Alliance</title>
+        <meta name="description" content="Build your Marvel Ultimate Alliance! Whether it's Avengers, Guardians of The Galaxy, X-Men, Fantastic Four, Midnight Suns, the Brotherhood of Mutants!" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/marvelsquads.png" />
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
+        <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+          `
+            }}
+          />
       </Head>
 
       <main className={styles.main}>
